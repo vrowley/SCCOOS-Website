@@ -31,7 +31,7 @@ services:
        - "443:443"
      volumes:
        - "scs-ng:/etc/nginx"
-       - "/var/run/docker.sock:/tmp/docker.sock:ro'"
+       - "/var/run/docker.sock:/tmp/docker.sock:ro"
      environment:
        DEFAULT_HOST: www.sccoos.org
        HTTPS_METHOD: noredirect
